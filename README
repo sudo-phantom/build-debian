@@ -1,0 +1,5 @@
+###
+This script was built to run on Debian based systems (e.g. Kali, Ubuntu,etc.)
+because it uses apt-get. i tried to limit the usage of apt-get so that it could
+be easily manipulated for use with other OS's but no garuntees.
+##
