@@ -5,13 +5,17 @@ sleep 2;
 clear;
 sudo apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev postgresql-client libpq5 libpq-dev libpcap0.8-dbg libpcap0.8-dev sqlite3 libsqlite3-dev -y -q;
 sudo mkdir ~/scripts ;
+sudo chown -R $(whoami) ~/scripts;
 sudo mkdir ~/projects ;
+sudo chown -R $(whoami) ~/projects;
 sudo apt install ruby -q -y;
 clear;
 echo "installing ruby";
 sleep 2;
 #sudo apt-get install nmap -y;
 sudo mkdir ~/tools;
+sudo chwon -R $(whoami) ~/tools;
+#change owner of tools directory
 cd ~/tools; 
 sudo git clone https://github.com/java-decompiler/jd-gui.git;
 cd java-decompiler;
